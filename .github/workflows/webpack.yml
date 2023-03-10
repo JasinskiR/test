@@ -6,15 +6,9 @@ jobs:
   Test:
     runs-on: ubuntu-latest
     steps:
-      - name: Run tests
+      - checkout
       - run: npm install
-      - run: npm install tap@12.1.2  # latest version for coverage
-      - save_cache:
-          paths:
-            - node_modules
-          key: v1-dependencies-{{ checksum "package.json" }}
-          
-      # run tests!
+      - run: npm run build
       - run: npm test
 
 
