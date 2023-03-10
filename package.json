@@ -6,8 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "jasmine",
-    "test-ci": "ng test --karma-config=karma-ci.conf.js --no-progress"
+    "test": "jasmine"
   },
   "private": true,
   "dependencies": {
