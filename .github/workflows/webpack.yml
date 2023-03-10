@@ -12,5 +12,5 @@ jobs:
         npm cache clean --force
         npm rm -rf node_modules && rm package-lock.json
         npm install
-        npm run test-ci
+        ng test
 
