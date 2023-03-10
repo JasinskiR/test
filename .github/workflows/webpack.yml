@@ -10,4 +10,5 @@ jobs:
       run: |
         npm install
         npm install karma-opera-launcher --save-dev
+        ng build
         npm run test-ci
