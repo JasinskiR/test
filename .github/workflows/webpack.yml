@@ -10,7 +10,6 @@ jobs:
       - run: npm cache clean --force
       - run: npm rm -rf node_modules && rm package-lock.json
       - run: npm install
-      - run: npm run build
       - run: npm test
 
 
