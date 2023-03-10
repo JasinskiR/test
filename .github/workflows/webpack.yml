@@ -9,6 +9,6 @@ jobs:
     - name: Run tests
       run: |
         npm install
-        npm install karma-opera-launcher --save-dev
+        npm install karma-jasmine --save-dev
         ng build
 
