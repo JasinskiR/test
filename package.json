@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "jasmine",
-    "test-ci": "ng test --karma-config=karma-ci.conf.js --no-progress"
+    "test-ci": "ng test --karma-config=karma-ci.conf.js --no-progress",
+    "setup": "npm install && npx cordova prepare && npx gulp"
   },
   "private": true,
   "dependencies": {
