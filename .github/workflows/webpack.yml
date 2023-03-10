@@ -13,6 +13,6 @@ jobs:
       - run: npm install --save-dev jasmine
       - run: npx jasmine init
       - run: npm install karma-jasmine --save-dev
-      - run: npm run-script test-ci
+      - run: ng test --karma-config=/karma.conf.js --no-progress
 
 
