@@ -7,10 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Run tests
-      run: |
-        npm install -g npm@latest
-        npm cache clean --force
-        npm rm -rf node_modules && rm package-lock.json
-        npm install
-        nnpm run test
-
+    - run: npm install -g npm@latest
+    - run: npm cache clean --force
+    - run: npm rm -rf node_modules && rm package-lock.json
+    - run: npm install
+    - run: npm install karma-jasmine --save-dev
+    - run: npm test
