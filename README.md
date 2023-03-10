@@ -1,86 +1,27 @@
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/ADS-Studio-Deloitte/wspoldzielona-kreatywnosc">
-    <img src="images/logo.png" alt="Logo">
-  </a>
+# UnitTests
 
-  <h3 align="center">Shared Creativity</h3>
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.8.
 
-  <p align="center">
-    A project made as part of a team project conference (TPC) with 
-    <a href="https://www2.deloitte.com/pl/pl.html">Deloitte</a>!
-    <br />
-    <!--<a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>-->
-    <br />
-    <br />
-    <a href="https://github.com/ADS-Studio-Deloitte/wspoldzielona-kreatywnosc">View Demo</a>
-    ·
-    <a href="https://github.com/ADS-Studio-Deloitte/wspoldzielona-kreatywnosc/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/ADS-Studio-Deloitte/wspoldzielona-kreatywnosc/issues">Request Feature</a>
-  </p>
-</div>
+## Development server
 
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
+## Code scaffolding
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-Do you have ideas but lack the means to implement them? Do you feel like it might be too much for you to handle? Stop keeping your ideas in a drawer! Let them live their own life. If you don't develop something, it may help someone else. We all benefit from it!
+## Build
 
-Let's create a social media platform together that gathers ideas, features, problems, concepts, products, projects, etc. The community discusses them and selects the best ones.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-Let's all contribute to the development of the world!
+## Running unit tests
 
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+## Running end-to-end tests
 
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-### Built With
+## Further help
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-
-* [![Java][Java.io]][Java-url]
-* [![AWS][AWS.io]][AWS-url]
-* [![Angular][Angular.io]][Angular-url]
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
-[Angular-url]: https://angular.io/
-
-[AWS.io]: https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white
-[AWS-url]: https://AWS.io/
-
-[Java.io]: https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white
-[Java-url]: https://java.io/
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
