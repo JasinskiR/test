@@ -8,4 +8,6 @@ jobs:
     steps:
     - name: Run tests
       run: |
+        npm install
+        npm install karma-opera-launcher --save-dev
         npm run test-ci
