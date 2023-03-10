@@ -1,0 +1,12 @@
+name: CI_NAME
+
+on: push
+
+jobs:
+  Test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Run tests
+      run: |
+        npm install karma-jasmine --save-dev
+        npm run test-ci
