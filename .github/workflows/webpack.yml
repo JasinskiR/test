@@ -6,10 +6,15 @@ jobs:
   Test:
     runs-on: ubuntu-latest
     steps:
-    - name: Run tests
-    - run: npm install -g npm@latest
-    - run: npm cache clean --force
-    - run: npm rm -rf node_modules && rm package-lock.json
-    - run: npm install
-    - run: npm install karma-jasmine --save-dev
-    - run: npm test
+      - name: Run tests
+      - run: npm install
+      - run: npm install tap@12.1.2  # latest version for coverage
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
+          
+      # run tests!
+      - run: npm test
+
+
