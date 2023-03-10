@@ -32,6 +32,10 @@ module.exports = function (config) {
       ]
     },
     reporters: ['jasmine'],
+    logLevel: config.LOG_ERROR,
+    autoWatch: false,
+    singleRun: true,
+    browserNoActivityTimeout: 40000,
     browsers: ['ChromeHeadlessCI'],
     customLaunchers: {
     ChromeHeadlessCI: {
