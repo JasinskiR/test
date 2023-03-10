@@ -31,7 +31,7 @@ module.exports = function (config) {
         { type: 'text-summary' }
       ]
     },
-    reporters: ['jasmin'],
+    reporters: ['jasmine'],
     port: 9876,
     colors: true,
     logLevel: config.LOG_ERROR,
