@@ -8,4 +8,4 @@ jobs:
     steps:
     - name: Run tests
       run: |
-        ng test
+        npm run test-ci
