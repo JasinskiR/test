@@ -12,6 +12,6 @@ jobs:
       - run: npm install
       - run: npm install --save-dev jasmine
       - run: npx jasmine init
-      - run: ng test --no-watch --no-progress
+      - run: npm test
 
 
