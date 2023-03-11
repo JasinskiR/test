@@ -3,6 +3,13 @@ name: CI_NAME
 on: push
 
 jobs:
+  Precomit:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v3
+    - name: self test action
+      uses: ./
   Test:
     runs-on: macos-latest
     steps:
