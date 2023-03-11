@@ -18,12 +18,21 @@ jobs:
         with:
           node-version: 16
           cache-dependency-path: subdir/package.json
-
       - run: npm install -g npm@latest
       - run: npm cache clean --force
       - run: npm rm -rf node_modules && rm package-lock.json
       - run: npm install
       - run: npm install karma-mocha-reporter --save-dev
       - run: npm run test-ci
-
+  Super-lint:
+    name: Lint code base
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Run Super-Linter
+        uses: github/super-linter@v6
+        env:
+          DEFAULT_BRANCH: main
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
