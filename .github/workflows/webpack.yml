@@ -10,7 +10,6 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-          cache: 'npm'
           cache-dependency-path: subdir/package.json
 
       - run: npm install -g npm@latest
