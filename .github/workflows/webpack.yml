@@ -16,13 +16,7 @@ jobs:
       - run: npm cache clean --force
       - run: npm rm -rf node_modules && rm package-lock.json
       - run: npm install
-      - run: npm install karma --save-dev
-      - run: npm install --save-dev jasmine
-      - run: npx jasmine init
-      - run: npm i karma-teamcity-reporter
-      - run: npm i grunt-karma
-      - run: npm install karma-jasmine --save-dev
-      - run: npm install grunt-karma --save-dev
+      - run: npm install karma-mocha-reporter --save-dev
       - run: npm run test-ci
 
 
