@@ -6,9 +6,8 @@ module.exports = function (config) {
     basePath: '',
     frameworks: ['jasmine', '@angular-devkit/build-angular'],
     plugins: [
-      require('karma-jasmine'),
-      require('karma-chrome-launcher'),
-      require('karma-jasmine-reporter'),
+      require('karma-teamcity'),
+      require('karma-teamcity-reporter'),
       require('@angular-devkit/build-angular/plugins/karma')
     ],
     client: {
@@ -31,7 +30,7 @@ module.exports = function (config) {
         { type: 'text-summary' }
       ]
     },
-    reporters: ['jasmine'],
+    reporters: ['teamcity'],
     logLevel: config.LOG_ERROR,
     autoWatch: false,
     singleRun: true,
