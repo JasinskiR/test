@@ -24,12 +24,12 @@ jobs:
       - run: npm install
       - run: npm install karma-mocha-reporter --save-dev
       - run: npm run test-ci
-  eslint:
+  Eslint:
     runs-on: ubuntu-latest
     steps:
       - run: npm install npm -g
-      - uses: actions/checkout@v1
-      - uses: stefanoeb/eslint-action@1.0.2
-        with:
-          files: src/
-
+      - uses: actions/checkout@v2
+      - name: Install modules
+        run: yarn
+      - name: Run ESLint
+        run: eslint . --ext .js,.jsx,.ts,.tsx
