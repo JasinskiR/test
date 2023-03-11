@@ -7,6 +7,7 @@ module.exports = function (config) {
     frameworks: ['jasmine', '@angular-devkit/build-angular'],
     plugins: [
       require('karma-jasmine'),
+      require('karma-chrome-launcher'),
       require('karma-teamcity-reporter'),
       require('@angular-devkit/build-angular/plugins/karma')
     ],
@@ -35,7 +36,7 @@ module.exports = function (config) {
     autoWatch: false,
     singleRun: true,
     browserNoActivityTimeout: 40000,
-    browsers: ['ChromeHeadlessCI'],
+    browsers: ['ChromeHeadless'],
     customLaunchers: {
     ChromeHeadlessCI: {
     base: 'ChromeHeadless',
