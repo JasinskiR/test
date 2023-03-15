@@ -18,9 +18,9 @@ jobs:
         with:
           node-version: 16
           cache-dependency-path: subdir/package.json
-      - run: npm install -g npm@latest
       - run: npm cache clean --force
       - run: npm rm -rf node_modules && rm package-lock.json
+      - run: npm install -g npm@latest
       - run: npm install
       - run: npm install karma-mocha-reporter --save-dev
       - run: npm run test-ci
