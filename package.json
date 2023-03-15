@@ -1,5 +1,5 @@
 {
-  "name": "my-first-project",
+  "name": "",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "jasmine",
-    "test-ci": "ng test --karma-config=./karma.conf.js --no-progress"
+    "test-ci": "ng test --karma-config=./karma.conf-ci.js --no-progress"
   },
   "private": true,
   "dependencies": {
